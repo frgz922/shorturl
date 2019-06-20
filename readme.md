@@ -40,8 +40,14 @@ php artisan key:generate
 
 ```bash
 DB_DATABASE=your_db_name
-DB_USERNAME=root
-DB_PASSWORD=
+DB_USERNAME=your_db_user_name
+DB_PASSWORD=your_db_password
+```
+
+- Configure .env file with your APP URL.
+
+```bash
+APP_URL= your_app_url #i.e. shorturl.test
 ```
 
 - Run Migrations:
@@ -56,6 +62,10 @@ php artisan migrate
 GET  api/shorturl #returns Top 100 most visited URLs.
 POST api/shorturl #creates and returns short url, param to pass: url, i.e. url=https://www.google.com/
 ```
+
+## App on Heroku
+
+The App has been deployed to Heroku, it can be accessed [here](https://terashorturl.herokuapp.com/).
 
 ## Challenges
 
